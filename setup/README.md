@@ -14,7 +14,6 @@ Open **Git Bash** on Windows or **Terminal** on macOS.
 Navigate to your labs directory:
 
 ```bash
-mkdir -p ~/code/ga/labs
 cd ~/code/ga/labs
 ```
 

@@ -64,23 +64,23 @@ cheescakeBtnEl.addEventListener('click', () => {
 
 
 // // PART 5 LEVEL UP 
-// const specialtyElements = document.querySelectorAll('.specialty-status')
-// const soldOutBtnElements = document.querySelectorAll('.sold-out-btn')
-// // console.log(soldOutBtnElements)
+const specialtyElements = document.querySelectorAll('.specialty-status')
+const soldOutBtnElements = document.querySelectorAll('.sold-out-btn')
+// console.log(soldOutBtnElements)
 
-// const statuses = ['Available', 'Sold Out', 'Available']
+const statuses = ['Available', 'Sold Out', 'Available']
 
-// const render = () => {
-//     //for each status, update its related html element's textContent
-//     statuses.forEach((status, index) => {
-//         specialtyElements[index].textContent = status
-//     })
-// }
-// render()
+const render = () => {
+    //for each status, update its related html element's textContent
+    statuses.forEach((status, index) => {
+        specialtyElements[index].textContent = status
+    })
+}
+render()
 
-// soldOutBtnElements.forEach((button, index) => {
-//     button.addEventListener('click', () => {
-//         statuses[index] = 'Sold Out'
-//         render()
-//     })
-// })
+soldOutBtnElements.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        statuses[index] = 'Sold Out'
+        render()
+    })
+})
