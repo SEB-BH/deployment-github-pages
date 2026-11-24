@@ -4,8 +4,8 @@
     "name": "modular-curriculum-all-courses"
   },
   "repo": {
-    "friendlyName": "Cozy Cafe Lab",
-    "name": "cozy-cafe-lab",
+    "friendlyName": "Deployment - GitHub Pages",
+    "name": "deployment-github-pages",
     "type": "Lab"
   },
   "courses": [
@@ -14,13 +14,7 @@
       "logoUrl": "",
       "microlessons": [
         {
-          "friendlyName": "Setup",
-          "dirName": "setup",
-          "type": "Content",
-          "videoUrl": ""
-        },
-        {
-          "friendlyName": "Exercise",
+          "friendlyName": "Troubleshooting",
           "dirName": "exercise",
           "type": "Content",
           "videoUrl": ""
@@ -53,13 +47,7 @@
       "logoUrl": "",
       "microlessons": [
         {
-          "friendlyName": "Setup",
-          "dirName": "setup",
-          "type": "Content",
-          "videoUrl": ""
-        },
-        {
-          "friendlyName": "Exercise",
+          "friendlyName": "Troubleshooting",
           "dirName": "exercise",
           "type": "Content",
           "videoUrl": ""

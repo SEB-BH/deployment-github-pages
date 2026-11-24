@@ -1,26 +1,77 @@
 <h1>
   <span class="prefix"></span>
-  <span class="headline">Working with the DOM - Cozy Cafe Edition</span>
+  <span class="headline">Deployment - GitHub Pages</span>
 </h1>
 
-## About
+## Deploying Your Browser Game with GitHub Pages
 
-Today, you'll be practicing DOM manipulation and event handling by bringing a cozy cafe website to life. Instead of hard-coding changes into the HTML or CSS, you'll use JavaScript to make dynamic updates to the site.
+**Learning objective:** Publish your HTML, CSS, and JavaScript game so other people can play it using a link.
 
-![Cozy Cafe Screenshot](./assets/cozy-cafe.png)
+GitHub Pages hosts websites directly from GitHub repositories. These instructions are for our **plain HTML, CSS, and JavaScript** game projects.
 
-## Content
+## 1. Check your project files
 
-- [Setup](./setup/README.md)
-- [Exercise](./exercise/README.md)
+Make sure your game works locally and that your latest code has been pushed to GitHub.
 
-### Time to complete
+Your repository should have an `index.html` file at its top level, like this:
 
-Estimated time to complete core lab exercise: **180 min**
+```text
+my-game/
+├── index.html  <--- index.html is not inside any other folders
+├── css/
+│   └── style.css
+├── js/
+│   └── app.js
+└── assets/
+    ├── images/
+    │   └── cat.png
+    ├── fonts/
+    │   └── game-font.woff2
+    └── sounds/
+        └── click.mp3
+```
 
-### Resources
+> **Important:** The main HTML file must be named exactly `index.html` (lowercase) and be inside the folder you choose to publish.
 
-- This [DOM Guide](https://gist.github.com/thegitfather/9c9f1a927cd57df14a59c268f118ce86) provides helpful tips on DOM querying and element creation.
-- [JavaScript and the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction).
+## 2. Turn on GitHub Pages
 
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback)!**
+1. Open your game's repository on **GitHub**.
+2. Select **Settings**.
+3. In the left menu, select **Pages**.
+4. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+5. Choose **main** as the branch and **/(root)** as the folder.
+6. Click **Save**.
+7. After the deployment finishes, return to **Settings → Pages** and click **Visit site**.
+
+Your game's link will look like this:
+
+```text
+https://USERNAME.github.io/REPOSITORY-NAME/
+```
+
+For example, a repository named `memory-game` owned by `sara-dev` would be:
+
+```text
+https://sara-dev.github.io/memory-game/
+```
+
+Publishing can take up to **10 minutes**. Open the deployed game and test the buttons, images, sounds, and fonts.
+
+## 3. Update your deployed game
+
+After changing your code, push the changes to GitHub:
+
+```bash
+git add .
+git commit -m "Update game"
+git push
+```
+
+GitHub Pages will publish the updated files automatically. You do not need to repeat the setup.
+
+> **Final check:** Test your game using the **GitHub Pages link**, not just Live Server. Make sure another person can open it and play.
+
+## Reference
+
+- [GitHub Docs: Configuring a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [GitHub Docs: Renaming a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository)
